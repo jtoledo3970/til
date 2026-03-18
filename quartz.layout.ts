@@ -10,7 +10,7 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       "EnigmaTracer": "https://enigmatracer.com",
       "Portfolio": "https://josemtoledo.com",
-      "GitHub": "https://github.com/USERNAME/til",
+      "GitHub": "https://github.com/jtoledo3970/til",
     },
   }),
 }
