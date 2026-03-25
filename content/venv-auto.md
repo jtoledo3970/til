@@ -8,7 +8,7 @@ tags: [python, automation, devops, venv]
 I was tired of my automated cron jobs and CLI scripts failing simply because I forgot to run `source venv/bin/activate`. Relying on external shell wrappers or manual activation is a point of failure I wanted to eliminate. Instead of managing the environment from the outside, I found a way to make the script "self-aware" and re-execute itself using the correct interpreter if it detects it's running in the wrong context.
 
 ## The Implementation
-This updated version doesn't just switch to the venv—it builds it. If the script detects it's running in a global environment, it checks for a `.venv`. If that's missing, it creates the environment, installs your dependencies, and then restarts itself.
+If the script detects it's running in a global environment, it checks for a `.venv`. If that's missing, it creates the environment, installs your dependencies, and then restarts itself.
 
 ```python
 import os
